@@ -206,3 +206,15 @@ class LinkedList {
     return this; // Return the reversed list
   }
 }
+
+const list = new LinkedList();
+list.push(1);
+list.push(2);
+list.push(3);
+list.push(4);
+list.push(5);
+
+console.log(list.findMiddle().value); // Output: 3
+
+list.push(6);
+console.log(list.findMiddle().value); // Output: 4 (second middle for even length)
